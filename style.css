@@ -1,57 +1,50 @@
-/* Products Section */
-.products-section {
-    padding: 80px 10%;
-    background-color: #fff;
-    text-align: center;
+/* Tổng thể */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: #444; background: #fffafb; }
+
+/* Header & Nav */
+header { background: #fff; padding: 20px 10%; box-shadow: 0 2px 5px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'Playfair Display', serif; font-size: 28px; color: #d4a373; }
+.logo span { color: #bc8f8f; }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { text-decoration: none; color: #555; font-weight: bold; }
+
+/* Hero Section - ĐÃ CẬP NHẬT ĐƯỜNG DẪN ẢNH MỚI */
+.hero { 
+    height: 85vh; 
+    /* Chú ý: images/spa-bg.jpg phải đúng tên file bạn đã upload */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/spa-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: #fff; 
+    text-align: center; 
 }
 
-.products-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #d4a373;
+.hero h1 { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 72px; 
+    margin-bottom: 15px; 
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.5); 
 }
 
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.hero p { 
+    font-size: 20px; 
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
 }
 
-.product-card {
-    background: #fffafb;
-    padding: 20px;
-    border-radius: 15px;
-    transition: 0.3s;
-    border: 1px solid #f2e1e1;
-}
+.btn-main { background: #d4a373; color: white; padding: 15px 40px; text-decoration: none; border-radius: 30px; margin-top: 25px; transition: 0.3s; font-weight: bold; }
+.btn-main:hover { background: #bc8f8f; transform: scale(1.05); }
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-
-.product-img img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.product-card h3 {
-    margin-bottom: 10px;
-    color: #bc8f8f;
-}
-
-.product-card p {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 15px;
-}
-
-.price {
-    font-weight: bold;
-    color: #d4a373;
-    font-size: 18px;
-}
+/* Booking Form */
+.booking-section { padding: 80px 10%; text-align: center; }
+.booking-container { max-width: 500px; margin: 30px auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+input, select { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; }
+.estimate-box { margin: 15px 0; padding: 10px; background: #fef1f3; border-left: 4px solid #d4a373; font-size: 0.9em; text-align: left; }
+.btn-submit { width: 100%; background: #bc8f8f; color: white; border: none; padding: 15px; border-radius: 8px; cursor: pointer; font-size: 16px; margin-top: 10px; }
