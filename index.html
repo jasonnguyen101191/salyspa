@@ -1,31 +1,66 @@
-<section id="services" class="products-section">
-    <h2>Sản Phẩm Nổi Bật</h2>
-    <div class="products-grid">
-        <div class="product-card">
-            <div class="product-img">
-                <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=500&q=80" alt="Tinh dầu Saly">
-            </div>
-            <h3>Tinh Dầu Thư Giãn</h3>
-            <p>Chiết xuất 100% tự nhiên giúp ngủ ngon và giảm stress.</p>
-            <span class="price">250.000đ</span>
-        </div>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalySpa - Trải Nghiệm Thư Giãn Tuyệt Đối</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Thêm font chữ sang trọng -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
 
-        <div class="product-card">
-            <div class="product-img">
-                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80" alt="Kem dưỡng da">
-            </div>
-            <h3>Kem Dưỡng Tái Tạo</h3>
-            <p>Phục hồi độ ẩm và làm sáng da sau liệu trình.</p>
-            <span class="price">450.000đ</span>
-        </div>
+    <header>
+        <nav>
+            <div class="logo">Saly<span>Spa</span></div>
+            <ul>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#booking">Đặt lịch</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="product-card">
-            <div class="product-img">
-                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Nến thơm">
-            </div>
-            <h3>Nến Thơm Cao Cấp</h3>
-            <p>Tạo không gian ấm cúng cho căn phòng của bạn.</p>
-            <span class="price">180.000đ</span>
+    <section class="hero">
+        <h1>SalySpa</h1>
+        <p>Nơi vẻ đẹp và sự thư giãn giao thoa</p>
+        <a href="#booking" class="btn-main">Đặt lịch ngay</a>
+    </section>
+
+    <section id="booking" class="booking-section">
+        <h2>Đặt Lịch Hẹn</h2>
+        <p>Mỗi liệu trình kéo dài từ 1h30 - 2h để đảm bảo chất lượng tốt nhất.</p>
+        
+        <div class="booking-container">
+            <form id="spaForm">
+                <input type="text" id="name" placeholder="Tên của bạn" required>
+                <input type="tel" id="phone" placeholder="Số điện thoại" required>
+                
+                <label for="date">Chọn ngày:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Chọn giờ bắt đầu:</label>
+                <select id="time" required>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="11:30">11:30 AM</option>
+                    <option value="14:00">14:00 PM</option>
+                    <option value="16:30">16:30 PM</option>
+                    <option value="19:00">19:00 PM</option>
+                </select>
+
+                <div id="time-estimate" class="estimate-box">
+                    <!-- JavaScript sẽ tự tính giờ kết thúc ở đây -->
+                </div>
+
+                <button type="submit" class="btn-submit">Xác nhận đặt lịch</button>
+            </form>
         </div>
-    </div>
-</section>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 SalySpa - Tận tâm phục vụ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
