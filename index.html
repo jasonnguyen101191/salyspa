@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalySpa - Trải Nghiệm Thư Giãn Tuyệt Đối</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Thêm font chữ sang trọng -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Saly<span>Spa</span></div>
+            <ul>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#booking">Đặt lịch</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>SalySpa</h1>
+        <p>Nơi vẻ đẹp và sự thư giãn giao thoa</p>
+        <a href="#booking" class="btn-main">Đặt lịch ngay</a>
+    </section>
+
+    <section id="booking" class="booking-section">
+        <h2>Đặt Lịch Hẹn</h2>
+        <p>Mỗi liệu trình kéo dài từ 1h30 - 2h để đảm bảo chất lượng tốt nhất.</p>
+        
+        <div class="booking-container">
+            <form id="spaForm">
+                <input type="text" id="name" placeholder="Tên của bạn" required>
+                <input type="tel" id="phone" placeholder="Số điện thoại" required>
+                
+                <label for="date">Chọn ngày:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Chọn giờ bắt đầu:</label>
+                <select id="time" required>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="11:30">11:30 AM</option>
+                    <option value="14:00">14:00 PM</option>
+                    <option value="16:30">16:30 PM</option>
+                    <option value="19:00">19:00 PM</option>
+                </select>
+
+                <div id="time-estimate" class="estimate-box">
+                    <!-- JavaScript sẽ tự tính giờ kết thúc ở đây -->
+                </div>
+
+                <button type="submit" class="btn-submit">Xác nhận đặt lịch</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 SalySpa - Tận tâm phục vụ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
